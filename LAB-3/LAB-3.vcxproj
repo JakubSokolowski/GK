@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{407EBF67-5DC1-4836-A8ED-BDD0EEFE1C98}</ProjectGuid>
-    <RootNamespace>GK</RootNamespace>
+    <ProjectGuid>{89AC1238-475D-4E4D-A7E7-21F40E463FE8}</ProjectGuid>
+    <RootNamespace>LAB3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -114,6 +114,23 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="InteractiveEgg.cpp" />
+    <ClCompile Include="InteractiveTeapot.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InteractiveEgg.h" />
+    <ClInclude Include="InteractiveTeapot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LAB-1\LAB-1.vcxproj">
+      <Project>{409294bb-fbea-4b98-be6a-dbb10cd62690}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LAB-2\LAB-2.vcxproj">
+      <Project>{f6f3694b-4492-4f0b-b998-1ae599460a83}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
